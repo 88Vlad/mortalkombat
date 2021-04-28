@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #010202;
+  font-family: 'Source Sans Pro',
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 56px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+}
+
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 15px;
+}
+
+.app {
+  background: linear-gradient(90deg, #010202 0%, #010202 43%, rgba(1, 2, 2, 0.2) 90%);
+  min-height: 100vh;
+  color: white;
+}
+
+.film {
+  width: 90%;
+  max-width: 1146px;
+  margin: auto;
+  padding: 7% 0;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  opacity: 0.4;
+  color: #E5E5E5;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.tags>* {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.age {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: 1px 5px;
+}
+
+.description {
+  max-width: 460px;
+  font-size: 21px;
+  line-height: 140%;
+  margin-bottom: 36px;
+}
+
+.button {
+  padding: 11px 26px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  line-height: 140%;
+  background: #2F2F2F;
+  color: white;
+  cursor: pointer;
+}
+
+.button-primary {
+  background: #EA6E20;
+  margin-right: 15px;
+}
+
+.button-fan {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: color .3s .2s,
+    width .2s 0s;
+  white-space: nowrap;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  padding: 0.375rem 1rem;
+  background-color: #ff5268;
+  border-color: #ff5268;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.button-text {
+  margin-left: 10px;
+  vertical-align: text-bottom;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* delete */
+
+/* всплывающее окно  */
+.pre1 {
+  color: #fff;
+}
+
+
+/* хуй пойми что  */
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: color .3s .2s, width .2s 0s;
+  white-space: nowrap;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  padding: 0.375rem 1rem;
+  background-color: #ff5268;
+  border-color: #ff5268;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+/*
+
+   Styles for animated modal
+   =========================
+
+*/
+
+/* Start state */
+.animated-modal {
+  max-width: 550px;
+  border-radius: 4px;
+  overflow: hidden;
+
+  transform: translateY(-50px);
+  transition: all .7s;
+}
+
+.animated-modal h2,
+.animated-modal p {
+  transform: translateY(-50px);
+  opacity: 0;
+
+  transition-property: transform, opacity;
+  transition-duration: .4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal h2 {
+  transition-delay: .1s;
+}
+
+.fancybox-slide--current .animated-modal p {
+  transition-delay: .3s;
+}
+
+
+/* delete */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .app {
+    height: auto;
+    padding-bottom: 400px;
+    background: url('../img/cover-image.jpg') no-repeat bottom center /300px;
+  }
+
+  video {
+    display: none;
+  }
+
+  .film {
+    padding-top: 2%;
+  }
+
+  .description {
+    font-size: 16px;
+    max-width: 333px;
+  }
+
+  .film-logo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-text {
+    display: none;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .app {
+    padding-bottom: 350px;
+    background-size: 300px;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+}
